@@ -14,9 +14,11 @@ function App() {
     //to select that is in paswordRef 
     passwordRef.current?.select();
     //particular selection upto some range
-    passwordRef.current?.setSelectionRange(0,5)
+   // passwordRef.current?.setSelectionRange(0,5)
      window.navigator.clipboard.writeText(password);
   },[password])
+
+
  //useCallback is used for memorization so that it can load faster 
  //in first it contains the function and in second it contains dependencies
 
