@@ -9,10 +9,11 @@ const initialState={
     }]
 }
 
-export const todoSlice =createSlice({
+export  const todoSlice =createSlice({
     name:'todo',
     initialState,
     reducers:{
+        //this are the actions
         addTodo:(state,action)=>{
             const todo={
                 id:nanoid(),
@@ -34,6 +35,6 @@ export const todoSlice =createSlice({
     }
 })
 
-export const{addTodo,updateTodo,removeTodo} =todoSlice.actions
+export const{addTodo,updateTodo,removeTodo} =todoSlice.actions //addtodo, removetodo all are the actions
 
 export default todoSlice.reducer
